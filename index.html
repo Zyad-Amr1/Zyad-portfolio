@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zyad Amr | Software Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+  scroll-behavior:smooth;
+}
+
+body {
+  background: linear-gradient(135deg,#0f172a,#111827);
+  color:#e2e8f0;
+  overflow-x:hidden;
+}
+
+/* ===== Navbar ===== */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15,23,42,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  z-index: 1000;
+}
+
+nav h2 {
+  font-weight: 800;
+  color: #3b82f6;
+}
+
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #3b82f6;
+}
+
+/* ===== Hero ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 8% 60px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.image-wrapper {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #3b82f6;
+  box-shadow: 0 0 35px rgba(59,130,246,0.4);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 26px;
+  border-radius: 30px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 100px 8%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 50px;
+}
+
+/* ===== About ===== */
+#about p {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.7;
+  color: #94a3b8;
+}
+
+/* ===== Projects ===== */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: rgba(30,41,59,0.9);
+  padding: 30px 20px;
+  border-radius: 15px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+  transition: .3s;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #3b82f6;
+}
+
+.project-card h3 {
+  color: #3b82f6;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #94a3b8;
+}
+
+/* ===== Contact ===== */
+.contact-box {
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  background: rgba(30,41,59,0.9);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #e2e8f0;
+  padding: 12px;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.contact-item:hover {
+  background: #0f172a;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #64748b;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <h2>ZA</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="image-wrapper">
+      <img src="photos/zyad custom.png" alt="Zyad Amr">
+    </div>
+    <div class="hero-text">
+      <h1>Zyad Amr</h1>
+      <p>Software Engineer | AI & Data Enthusiast</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>
+        Hi! I'm <strong>Zyad Amr</strong>, a Software Engineer passionate about building 
+        intelligent systems and modern web applications. I specialize in AI, Data, 
+        and scalable solutions that create real-world impact.
+      </p>
+      <p>
+        I believe technology should simplify life, empower decisions, and uncover 
+        hidden insights. I enjoy combining creativity and code to deliver polished, 
+        efficient, and user-friendly applications.
+      </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="project-container">
+    <div class="project-card">
+      <h3>ESP32 Smart Drone</h3>
+      <p>IoT drone controlled via mobile app with real-time sensors and automation.</p>
+    </div>
+    <div class="project-card">
+      <h3>Digital Clock Circuit</h3>
+      <p>Designed using logic gates and ICs with precise timekeeping and counters.</p>
+    </div>
+    <div class="project-card">
+      <h3>Gemini Pro</h3>
+      <p>AI-powered chatbot with perfect UI/UX integration and intelligent responses.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-box">
+    <a href="https://www.linkedin.com/in/zyadamrwaheeb" target="_blank" class="contact-item">
+      <i class="fab fa-linkedin"></i>
+      <span>linkedin.com/in/zyadamrwaheeb</span>
+    </a>
+    <a href="mailto:zyadamrwaheeb@outlook.com" class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <span>zyadamrwaheeb@outlook.com</span>
+    </a>
+    <a href="tel:+201008470555" class="contact-item">
+      <i class="fas fa-phone"></i>
+      <span>01008470555</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+© 2026 Zyad Amr | Software Engineer
+</footer>
+
+</body>
+</html>
